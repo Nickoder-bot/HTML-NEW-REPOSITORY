@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+    <meta charset="utf-8">
+    <title>Pizza Time Pizza</title>
+    <!--Tab icon -->
+    <link rel="icon" href="Images/pizza.png" type="image/x-icon" />
+    </head>
+
+    <body>
+
+  <header>
+    <h1>Where all your pizza needs are met!</h1>
+   <!-- navigation menu for jumping to different sections -->
+            <nav>
+                <ul class="nav-table">
+                  <li><a href="#about">About us</a></li>
+                  <li><a href="#order">order</a></li>
+                  <li><a href="#map">location</a></li>  
+                </ul>
+            </nav>
+  </header>
+   
+    <main>
+        <section id="about">
+         <h2>About</h2>
+
+        <p>
+                <!-- image of make believe cook -->
+                <img src="Images/my-work-pictures-from-pizza-planet-late-90s-early-2000s-v0-2ij8fsdlkace1.webp" alt="Our favorite cook at the oven!" width="250" height="250"> <br>
+
+                <strong>Pizza Time Pizza<code>&reg;</code></strong> has been proudly serving the Barrie area for over 
+                <strong>17 years</strong>! What started as a small family-owned shop has grown into a local favorite, 
+                known for our hand-tossed dough, homemade sauces, and generous toppings. We’re all about keeping things 
+                <em>fresh, fast,</em> and <i><strong>flavorful</strong></i> — using only the highest quality ingredients sourced from 
+                our trusted <a href="https://www.barriefarmersmarket.ca/">local suppliers.</a>
+                                  <!-- link to our local suppliers  -->
+        </p>
+        </section>
+
+        <section id="order">
+        <h2>Order</h2>
+        <p>where the <i>magic</i> happens!</p>
+                <!-- Main pizza order form -->
+        <form action="ordertest.html" method="get">
+                
+        <fieldset>
+                <legend>Pizza Quantity</legend>
+                <label for="quantity">Number of Pizzas</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10">
+        </fieldset>
+
+
+        <fieldset>
+        <legend>Pizza Size</legend>
+        <!-- Dropdown menu for pizza sizes -->
+                <label for="size">Select Size:</label>
+                <select id="size" name="pizzaSize">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                </select>
+        </fieldset>
+
+        <fieldset>
+        <legend>Crust type</legend>
+        <!-- Dropdown menu for pizza crust -->
+                <label for="crust">Select Crust</label>
+                <select id="crust" name="pizzaType">
+                        <option value="thinCrust">Thin Crust</option>
+                        <option value="deepDish">Deep Dish</option>
+                        <option value="regular">Regular</option>
+                        </select>
+        </fieldset>
+
+
+       <fieldset>
+        <legend>Toppings</legend>
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni"><br>
+
+                <label for="olives">Green Olives</label>
+                <input type="checkbox" id="olives" name="toppings" value="olives"><br>
+
+                <label for="onions">Onions</label>
+                <input type="checkbox" id="onions" name="toppings" value="onions"><br>
+
+                <label for="feta">Feta</label>
+                <input type="checkbox" id="feta" name="toppings" value="feta"><br>
+
+                <label for="sausage">Sausage</label>
+                <input type="checkbox" id="sausage" name="toppings" value="sausage"><br>
+
+                <label for="bacon">Bacon</label>
+                <input type="checkbox" id="bacon" name="toppings" value="bacon"><br>
+
+                <label for="groundBeef">Ground Beef</label>
+                <input type="checkbox" id="groundBeef" name="toppings" value="groundBeef"><br>
+
+                <label for="jalapeno">Jalapeno</label>
+                <input type="checkbox" id="jalapeno" name="toppings" value="jalapeno"><br>
+        </fieldset>
+
+        <fieldset>
+        <legend>Delivery Options</legend>
+                <label for="pickup">Pickup</label>
+                <input type="radio" id="pickup" name="deliveryMode" value="pickup"><br>
+
+                <label for="delivery">Delivery</label>
+                <input type="radio" id="delivery" name="deliveryMode" value="delivery"><br>
+        </fieldset>
+        
+        </section>
+                
+        
+    
+  <fieldset>
+    <legend>Contact Info</legend>
+
+    <label for="deliveryAddress">Delivery Address</label>
+    <input type="text" id="deliveryAddress" name="address" placeholder="123 Main Street"><br>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="customerName" placeholder="Jane Smith" required><br>
+
+    <label for="phoneNumber">Phone Number</label>
+    <input type="tel" id="phoneNumber" name="phone" placeholder="555-555-5555" required><br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="custEmail" placeholder="name@example.com" required><br>
+
+  </fieldset>
+
+  <button type="submit">Submit</button>
+</form>
+
+<form action="ratingpage.html" method="get">
+        
+<p>Rate us!</p>
+<fieldset>
+  <legend>Rating</legend>
+
+  <label for="rating1">1</label>
+  <input type="radio" id="rating1" name="rating" value="1">
+
+  <label for="rating2">2</label>
+  <input type="radio" id="rating2" name="rating" value="2">
+
+  <label for="rating3">3</label>
+  <input type="radio" id="rating3" name="rating" value="3">
+
+  <label for="rating4">4</label>
+  <input type="radio" id="rating4" name="rating" value="4">
+
+  <label for="rating5">5</label>
+  <input type="radio" id="rating5" name="rating" value="5">
+</fieldset>
+
+<textarea name="comments" rows="5" cols="20" placeholder="Leave your comments here!"></textarea><br>
+<button type="submit">Submit</button>
+
+</form>
+
+<!-- really neat map feature I found from www.openstreetmap.org that gives the actually iframe structure for html pages! -->
+<section id="map">
+ <h2>Find Us</h2>
+
+<iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-79.67129051685333%2C44.409535309809364%2C-79.6649068593979%2C44.412190898590275&amp;layer=mapnik&amp;marker=44.41086311927204%2C-79.66809868812561" style="border: 1px solid black"></iframe>
+</section>
+
+<br/><small>
+ <a href="https://www.openstreetmap.org/?mlat=44.410863&amp;mlon=-79.668099#map=18/44.410863/-79.668099">View Larger Map</a></small>
+
+</main>
+                <!-- fun little "ads" in gif form I included-->
+        <footer> <img src="Images/iwon!.gif" alt="Win a free car!" height="50" width="150"> 
+                <img src="Images/wow.gif" alt="The best navigator around!" height="50" width="100">
+        </footer>
+ </body>
+
+
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Rating</title>
+</head>
+
+<body>
+    <h1>Thank you for your feedback!</h1>
+    <div id="rateSummary"></div>
+
+    <script>
+        //grabbing values from previous page
+        const params = new URLSearchParams(window.location.search);
+        const rating = params.get("rating");
+        const comments = params.get("comments");
+
+        // show the summary of the rating
+        let summary = "";
+        //if rating is Not null
+        if (rating) 
+        {
+            summary += `You rated us ${rating} out of 5.<br>`;
+        } 
+        //if customer did not leave rating
+        else 
+        {
+            summary += "No rating provided.<br>";
+        }
+        //shows the submitted comment on page
+        summary += `Your comments: ${comments ? comments : "No comments provided."}`;
+
+        document.getElementById("summary").innerHTML = summary;
+    </script>
+</body>
+</html>

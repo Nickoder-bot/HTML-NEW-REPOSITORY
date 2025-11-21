@@ -1,17 +1,8 @@
 body 
 {
     margin: 0;
-    
-    color: white;
-    overflow-x: hidden;
-
-    
-    min-height: 100vh;
-
-    
-    background-color: black;
     background-image: 
-        linear-gradient(to right, black 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, black 100%),
+        
         url("/Assignments/Images/Back_to_the_Future_Part_II_Textless_Poster.webp");
     background-size: cover;
     background-position: center;
@@ -53,34 +44,45 @@ body
     top: 30%;               
     transform: translateY(-50%); 
 }
-.MainGuys
+.Mainguys
 {
+    color: white;
+    font-size: 30px;
     text-align: right;
+    transform: translateY(12cm) translateX(-10cm);
+    font-family: 'SteelTongs', sans-serif;
+}
+.Mainguys .Bottomguy
+{
+    transform:translateY(6cm) translateX(5cm);
 }
 
 .attentionDraw
  {
 
     text-align: center;   
-    color: rgb(4, 161, 189);
+    color: rgb(7, 208, 243);
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 20px; 
     line-height: 20%;
     font-family: 'Bungee', sans-serif;
     text-shadow: 20px 20px 10px rgba(0,0,0,0.8);
-    transform: translateY(-50%) translateX(-3mm);
+    transform: translateY(2cm) translateX(-3mm);
     
  }
-.attentionDraw .Tagline
+.Tagline
 {
     line-height:2cm;
-    font-size:  24px;
-    color: rgb(168, 168, 11);
-    transform:translateX(-1%) translateY(50%);
+    font-size:  54px;
+    color: rgb(255, 255, 0);
     font-family: 'playfair display',sans-serif;
 
  
+}
+.Tagline .bottomtext
+{
+    transform: translateY(-100%) translateX(17%);
 }
 
 
@@ -119,16 +121,18 @@ body
 .Others 
 {
     color: white;
-    text-align: right;
+    text-align: center;
     font-size: 25px;
     margin-bottom: 69px;
     transform: translateY(170%);
     line-height: 0cm;
+    word-spacing: 5px;
+    background-color: rgba(0,0,0,0.8);
 }
 
 .Micheal
 {
-    transform: translateX(-10%);
+    transform: translateX(0%);
 }
 footer 
 {
@@ -140,5 +144,5 @@ footer
 }
 .spacer 
 {
-    height: 700px; 
+    height: 1100px; 
 }

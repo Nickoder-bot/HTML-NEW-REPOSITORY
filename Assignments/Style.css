@@ -4,7 +4,7 @@ body
     overflow-x:hidden;
     background-color: black;
     background-image: 
-    url("/Assignments/Images/Back_to_the_Future_Part_II_Textless_Poster.webp");
+    url("Images/Back_to_the_Future_Part_II_Textless_Poster.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body
 @font-face 
 {
     font-family: 'BTTF';
-    src: url('/Assignments/Fonts/BTTF.ttf') format('truetype');
+    src: url('Fonts/BTTF.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,7 +29,7 @@ body
 @font-face 
 {
     font-family: 'SteelTongs';
-    src: url('/Assignments/Fonts/SteelTongs.ttf') format('truetype');
+    src: url('Fonts/SteelTongs.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

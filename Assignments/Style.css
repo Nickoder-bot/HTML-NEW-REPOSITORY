@@ -56,7 +56,7 @@ body
     color: white;
     font-size: 30px;
     text-align: right;
-    transform: translateY(10cm) translateX(-10cm);
+    transform: translateY(11cm) translateX(-10cm);
     font-family: 'SteelTongs', sans-serif;
 }
 .Mainguys .Bottomguy
@@ -93,8 +93,23 @@ body
 }
 
 
+.outsideLinks
+{
+    color: rgba(255,255,0);
+    font-family: 'Bungee', sans-serif;
+    font-size: 30px;
+    text-align: right;
+    transform: translateY(800px)
+}
 
-
+.outsideLinks .review
+{
+    transform: translateX(-60px)
+}
+a {
+    color: yellow;     
+    text-decoration: none; 
+}
 
 .mainTitle h1 
 {

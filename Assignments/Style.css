@@ -40,6 +40,9 @@ body
     color: rgb(255, 255, 0);
     font-family: 'playfair display',sans-serif;
     font-size:45px;
+    transform: translateY(-50px);
+  text-shadow: 20px 20px 10px rgba(0, 0, 0, 1);
+
 }
 .header 
 {
@@ -58,6 +61,7 @@ body
     text-align: right;
     transform: translateY(11cm) translateX(-10cm);
     font-family: 'SteelTongs', sans-serif;
+   
 }
 .Mainguys .Bottomguy
 {
@@ -74,7 +78,7 @@ body
     margin-bottom: 20px; 
     line-height: 20%;
     font-family: 'Bungee', sans-serif;
-    text-shadow: 20px 20px 10px rgba(0,0,0,0.8);
+    text-shadow: 20px 20px 10px rgba(0,0,0,10);
     transform: translateY(2cm) translateX(-3mm);
     
  }
@@ -84,6 +88,7 @@ body
     font-size:  54px;
     color: rgb(255, 255, 0);
     font-family: 'playfair display',sans-serif;
+    text-shadow: 20px 20px 10px rgba(0,0,0,10);
 
  
 }
@@ -109,8 +114,14 @@ body
 a {
     color: yellow;     
     text-decoration: none; 
+   text-shadow: 20px 20px 10px rgba(0, 0, 0, 1);
+
 }
 
+a:hover
+{
+    color:red;
+}
 .mainTitle h1 
 {
     text-align: center;  
@@ -146,10 +157,10 @@ a {
     text-align: center;
     font-size: 25px;
     margin-bottom: 69px;
-    transform: translateY(180%);
+    transform: translateY(300%);
     line-height: 0cm;
     word-spacing: 5px;
-    background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.8);
 }
 
 .Micheal

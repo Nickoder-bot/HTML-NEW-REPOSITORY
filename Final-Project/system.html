@@ -4,42 +4,79 @@
     <head>
     <meta charset="utf-8">
     <title>Nintendo Now your playing with POWER!</title>
-    <link rel="stylesheet" href="system.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="/Final-Project/Javascript/java.js"></script>
     <link rel="icon" href="/Final-Project/Images/[CITYPNG.COM]HD Nintendo Official Logo Transparent Background - 2000x2000.png" type="image/x-icon" />
 
-    </head>
 
+    </head>
     <body>
 
-        <header>
-            <h1>Nintendo Entertainment System</h1>
-            <h2>The next big thing in home entertainment</h2>
-               <nav>
-				<ul>
-					<li><a href="mainpage.html" title="Go to the Home page">Home</a></li>
-					<li><a href="System.html" title="See system specs">System</a>
-					<li><a href="shop.html" title="Purchase system and games">Shop</a></li>
-					<li><a href="feedback.html" title="Look at reviews!">Reviews</a></li>
-					<li><a href="support.html" title="Find helpful guides">Support</a></li>
-					<li><a href="about.html" title="Learn more about us">About</a>
+       <header>
+    <h1>Nintendo Entertainment System</h1>
+    <h2>The next big thing in home entertainment</h2>
+
+    <nav class="navbar">
+        <ul>
+
+            <li><a href="mainpage.html" title="Go to the Home page">Home</a></li>
+
+           
+            <li class="system-dropdown">
+                <a href="system.html" title="See system specs">System ▾</a>
+
+                <ul class="system-items">
+                    <li><a href="system.html#specs">Specs</a></li>
+                    <li><a href="system.html#graphics">Graphics</a></li>
+                    <li><a href="system.html#controller">Controller</a></li>
+                    <li><a href="system.html#sound">Sound</a></li>
                 </ul>
-			</nav>
-        </header>
+            </li>
+            
+
+            <li><a href="shop.html" title="Purchase system and games">Shop</a></li>
+            <li><a href="feedback.html" title="Look at reviews!">Reviews</a></li>
+            <li><a href="support.html" title="Find helpful guides">Support</a></li>
+            <li><a href="about.html" title="Learn more about us">About</a></li>
+
+        </ul>
+    </nav>
+</header>
+
 
         <main>
                 <p><strong>A smash hit for this christmas season!</strong></p>
 
-                    <img src="/Final-Project/Images/cgajhqgasbcb2duktnogk7aj6a-d2db07b57825d9fb9486d4c2cab20744.png" alt="Nintendo Entertainment System" width="500" height="500">
-                    <p><strong> now your playing with POWER!</strong></p>
+                    <img src="/Final-Project/Images/cgajhqgasbcb2duktnogk7aj6a-d2db07b57825d9fb9486d4c2cab20744.png" alt="Nintendo Entertainment System" width="500" height="500"class="centerImg">
+                    <p><strong> Now your playing with POWER!</strong></p>
                
-            <section class="graphics">
-                <h2>Performance<h2>
+
+            <section class="system" id="specs">
+                <h2>Specs</h2>
+                <p>Powered by an 8 bit processor with support of over 54 vibrant colors! smooth scrolling backgrounds
+                    and a crisp clean dedicated 5 channel sound engine it feels like your playing inside the game!
+                </p>
+                <figure class="spriteComparisons">
+                    
+                    <figcaption class="nesSprite">Model taken off of NES Donkey Kong video game</figcaption>
+                    <img src="/Final-Project/Images/post-26314-0-46104400-1324271742.webp "class="centerImg" alt="Donkey kong nes and atari 2600 sprites">
+
+                    <figcaption class="atariSprite">Model taken off of Atari 2600 Donkey Kong video game</figcaption>
+                </figure>
+              </section>
+
+
+
+
+            <section class="system" id="graphics">
+                <h2>Graphics<h2>
                 <p>The new nintendo entertainment system packs a whallop of a punch compared to its competition!
                  you wont get these kinds of graphics anywhere else!</p>
+
                  <div class="comparison">
                     <figure>
                     <img src="/Final-Project/Images/before.jpg" alt="Atari 2600 donkey kong" class="image" width="500" height="500">
-                    <figcaption>Atari 2600 version of Donkey kong</figcaption>
+                    <figcaption>Atari 800 version of Donkey kong</figcaption>
                     </figure>
 
                     <figure>
@@ -50,9 +87,38 @@
                  </div>
             </section>
 
-                
-                    
-                
+            <section class="system" id="controller">
+            <h2>Controller</h2>
+        <div class="controller">
+                <img src="/Final-Project/Images/nintendo2.svg" alt="controller" width="600" height="450" class="main centerImage">
+
+                <p>
+                    Introducing the NES controller, the next evolution of game controller. Engineered for effortless play, its perfectly balanced design, responsive buttons, and unmistakable feel deliver a level of control that keeps players coming back.
+                </p>
+
+            <figure>
+                    <img src="/Final-Project/Images/NES_face_buttons.jpg" 
+                        alt="face buttons" 
+                        width="300" height="250" 
+                        class="faceButton"
+                        data-description="Introducing the A/B face buttons. Responsive and durable, these buttons are tested to perform 100% better than the competition with game performance">
+
+                    <img src="/Final-Project/Images/select buttons.jpg" alt="select button" width="300" height="250"data-description="Introducing the Select and Start buttons, a new way to control game time. These buttons are mainly used to pause and resume gaming but its up do game designers to add additional funcionality">
+                    <img src="/Final-Project/Images/dpad.jpg" alt="d pad" width="300" height="250"
+                    data-description="Percise and fluid the NES D-pad is a marvel to play, with over 8 different directions to move from with this is the next evolution of analog controls">
+                    <img src="/Final-Project/Images/cable.jpg" alt="controller cable" width="300" height="250" data-description="No more eyestrains trying to play on the tv! the new NES Controller has 7.6ft of length making even the farthest tv a ease of use!">
+            </figure>
+            </div>
+            
+        </section>
+    <section class="system" id="sound">
+
+        <h2>Sound</h2>
+
+        <p>Experience for the first time from Nintendo, crisp melodies, punchy basslines, and every note in between, engineered for crisp high-quality sound. The NES sound chip brings your favorite games to life with rich, immersive audio, from music to satisfying sound effects, delivering the next evolution of timeless gaming experience."</p>
+
+    </section>
+    
         </main>
 
 
@@ -60,5 +126,6 @@
 
 
 
+    <script src="/Final-Project/Javascript/java.js"></script>
 
     </body>

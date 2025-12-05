@@ -8,7 +8,11 @@ h2
     color: red;
     text-align: center;
 }
-
+h3
+{
+  color: red;
+  text-align:left;
+}
 nav 
 {
   border: 2px solid #ff0000;     
@@ -166,4 +170,36 @@ p
     font-size: 14px;
     font-size: larger;
 }
+
+.shop 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  text-align: center;   
+  border: 3px solid #ff0000;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.product
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;           
+  justify-content: flex-start; 
+  gap: 10px;
+  font-size: larger;
+}
+
+.description
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
 

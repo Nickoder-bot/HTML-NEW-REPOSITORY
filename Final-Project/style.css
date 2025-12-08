@@ -202,7 +202,26 @@ p
   flex-direction: column;
   align-items: center;
 }
+.system-about
+{
+   max-width: 800px;           
+    margin: 20px auto;           
+    padding: 20px;              
+    
+    border-radius: 10px;         
+    font-family: Arial, sans-serif; /* Set a nice font family */
+}
+
+.system-about a 
+{
+  color: rgb(255, 0, 0);  
+  text-decoration: none;
+}
 
 
-
+.system-about a:hover 
+{
+  color: #000000;
+  background-color: #ff0000;
+}
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+    <meta charset="utf-8">
+    <title>Nintendo Now your playing with POWER!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Final-Project/Images/[CITYPNG.COM]HD Nintendo Official Logo Transparent Background - 2000x2000.png" type="image/x-icon" />
+
+    </head>
+
+    <body>
+
+        <header id="nav-container"></header>
+   
+
+   <script>
+        
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-container").innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading the navbar:', error);
+            });
+    </script>
+
+        <main>
+            <h1>What is Nintendo?</h1>
+            <section class="system system-about">
+               
+
+            
+                    <p>Founded in 1889 by <a href="https://en.wikipedia.org/wiki/Fusajiro_Yamauchi">Fusajiro Yamauchi</a>, Nintendo began as a small playing card company in Kyoto, Japan. Over the decades, the company explored several different business ventures, but it wasn’t until the 1970s that Nintendo ventured into the video game industry.
+                    </p>
+
+                    <p>In 1981, Nintendo released the groundbreaking arcade game <a href="https://en.wikipedia.org/wiki/Donkey_Kong">Donkey Kong</a>, introducing the world to the now-iconic character <a href="https://en.wikipedia.org/wiki/Mario">Mario</a>. This marked the company’s shift into the world of electronic entertainment, and soon after, they became a major force in the arcade scene.</p>
+               
+                    <p>Fast forward to the present, and Nintendo has taken its arcade expertise and brought it home with the debut of its <a href="shop.html#mainProduct">Nintendo Entertainment System </a> (NES). With this new home console, Nintendo has revolutionized gaming to millions of households around the world, introducing unforgettable characters and games that beg to be played.</p>
+                
+                    </div>
+                
+                   </section> 
+                
+        </main>
+
+
+
+
+
+
+
+    </body>

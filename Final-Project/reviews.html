@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nintendo - Now You're Playing with Power!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Final-Project/Images/Nintendo-Logo.png" type="image/x-icon" />
+</head>
+
+<body>
+
+   
+        <h1>Nintendo Entertainment System</h1>
+        <h2>The next big thing in home entertainment</h2>
+       <header id="nav-container"></header>
+   
+
+   <script>
+        
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-container").innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading the navbar:', error);
+            });
+    </script>
+
+    <main>
+        <p><strong>Your feedback matters to us!</strong></p>
+
+        <form action="ratingpage.html" method="get">
+            <div class="system">
+                <h2>Rate us!</h2>
+                <div class="productBought">
+                    <h3>Which product did you purchase from us?</h3>
+                    <label for="nes">NES</label>
+                    <input type="radio" name="product" id="nes" value="nes">
+                    
+                    <label for="nesController">NES Controller</label>
+                    <input type="radio" name="product" id="nesController" value="nesController">
+                    
+                    <label for="game1">Donkey Kong</label>
+                    <input type="radio" name="product" id="game1" value="game1">
+                    
+                    <label for="game2">Kirby</label>
+                    <input type="radio" name="product" id="game2" value="game2">
+                    
+                    <label for="game3">MarioBros</label>
+                    <input type="radio" name="product" id="game3" value="game3">
+                </div>
+                
+                <div class="contactInfo">
+                    <h3>Where did you purchase this product?</h3>
+                    <input type="text" placeholder="123 Main Street">
+                    
+                    <h3>Contact Info</h3>
+                    <input type="text" placeholder="Your Name">
+                    <input type="tel" placeholder="555-555-5555">
+                    <input type="email" placeholder="yourname@email.com">
+                    
+                    <label for="fileInput">Photo of receipt:</label>
+                    <input type="file" id="fileInput">
+                    
+                    <fieldset class="system">
+                        <legend>Rating</legend>
+                        <label for="rating1">1</label>
+                        <input type="radio" id="rating1" name="rating" value="1">
+                        
+                        <label for="rating2">2</label>
+                        <input type="radio" id="rating2" name="rating" value="2">
+                        
+                        <label for="rating3">3</label>
+                        <input type="radio" id="rating3" name="rating" value="3">
+                        
+                        <label for="rating4">4</label>
+                        <input type="radio" id="rating4" name="rating" value="4">
+                        
+                        <label for="rating5">5</label>
+                        <input type="radio" id="rating5" name="rating" value="5">
+                    </fieldset>
+
+                    <textarea name="comments" rows="5" cols="20" placeholder="Leave your comments here!"></textarea><br>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -12,36 +12,24 @@
     </head>
     <body>
 
-       <header>
+       
     <h1>Nintendo Entertainment System</h1>
     <h2>The next big thing in home entertainment</h2>
 
-    <nav class="navbar">
-        <ul>
+    <header id="nav-container"></header>
+   
 
-            <li><a href="mainpage.html" title="Go to the Home page">Home</a></li>
-
-           
-            <li class="system-dropdown">
-                <a href="system.html" title="See system specs">System ▾</a>
-
-                <ul class="system-items">
-                    <li><a href="system.html#specs">Specs</a></li>
-                    <li><a href="system.html#graphics">Graphics</a></li>
-                    <li><a href="system.html#controller">Controller</a></li>
-                    <li><a href="system.html#sound">Sound</a></li>
-                </ul>
-            </li>
-            
-
-            <li><a href="shop.html" title="Purchase system and games">Shop</a></li>
-            <li><a href="feedback.html" title="Look at reviews!">Reviews</a></li>
-            <li><a href="support.html" title="Find helpful guides">Support</a></li>
-            <li><a href="about.html" title="Learn more about us">About</a></li>
-
-        </ul>
-    </nav>
-</header>
+   <script>
+        
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-container").innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading the navbar:', error);
+            });
+    </script>
 
 
         <main>
@@ -118,7 +106,7 @@
         <p>Experience for the first time from Nintendo, crisp melodies, punchy basslines, and every note in between, engineered for crisp high-quality sound. The NES sound chip brings your favorite games to life with rich, immersive audio, from music to satisfying sound effects, delivering the next evolution of timeless gaming experience."</p>
 
     </section>
-    
+            
         </main>
 
 

@@ -11,20 +11,20 @@
 
     <body>
 
-        <header>
-            <h1>Nintendo Entertainment System</h1>
-            <h2>The next big thing in home entertainment</h2>
-               <nav>
-				<ul>
-					<li><a href="mainpage.html" title="Go to the Home page">Home</a></li>
-					<li><a href="system.html" title="See system specs">System</a>
-					<li><a href="shop.html" title="Purchase system and games">Shop</a></li>
-					<li><a href="feedback.html" title="Look at reviews!">Reviews</a></li>
-					<li><a href="support.html" title="Find helpful guides">Support</a></li>
-					<li><a href="about.html" title="Learn more about us">About</a>
-                </ul>
-			</nav>
-        </header>
+        <header id="nav-container"></header>
+   
+
+   <script>
+        
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-container").innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading the navbar:', error);
+            });
+    </script>
 
         <main>
                 <p><strong>A smash hit for this christmas season!</strong></p>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Final-Project/style.css">
+    <title>Checkout</title>
+</head>
+<body>
+
+    <h1>Checkout </h1>
+
+    <div id="orderSummary">
+        <h2 id="productName">Loading product...</h2>
+        <p id="productPrice">Please wait...</p>
+    </div>
+
+    <script>
+      
+        const urlParams = new URLSearchParams(window.location.search);
+        const product = urlParams.get('product');
+
+        
+        const productDetails = 
+        {
+            "NESController": 
+            {
+                name: "NES Controller",
+                price: "79.99",
+                image: "/Final-Project/Images/kindpng_4125229.png"
+            },
+            "DonkeyKong":
+             {
+                name: "Donkey Kong",
+                price: "79.99",
+                image: "/Final-Project/Images/Donkey_Kong.JPG.webp"
+            },
+            "Kirby": {
+                name: "Kirby's Adventure",
+                price: "79.99"
+            },
+            "MarioBros": {
+                name: "Mario Bros",
+                price: "79.99"
+            }
+        };
+
+       
+        if (product && productDetails[product])
+         {
+            const selectedProduct = productDetails[product];
+            document.getElementById('productName').textContent = selectedProduct.name;
+            document.getElementById('productPrice').textContent = "$" + selectedProduct.price;
+        } else {
+            document.getElementById('productName').textContent = "Invalid product.";
+            document.getElementById('productPrice').textContent = "";
+        }
+    </script>
+
+</body>
+</html>
